@@ -1,3 +1,20 @@
+* {
+    font-family: 'Source Serif Pro', serif;
+}
+
+:root {
+    --blue: #024059;
+    --tan: #D9CCC1;
+}
+
 h1 {
-    color: red;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*  CLASS SELECTORS */
+.custom-header {
+    height: 40vh;
+    width: 100vh;
+    background-color: var(--blue);
+    color: var(--tan);
 }
