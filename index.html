@@ -35,7 +35,7 @@
     <main>
       <!-- SIDE CARD -->
       <div class="d-flex col-12 justify-content-around">
-        <aside class="col-3 card my-4 custom-aside">
+        <aside class="col-3 card m-4 custom-aside">
           <h2 class="card-header fw-bolder" style="background-color: #024059; color: #e9ecef">Instructions</h2>
           <div class="card-body" style="background-color: #f8f9fa;">
             <p class="card-text fw-bolder">
@@ -53,27 +53,32 @@
             <button class="btn col-12" style="background-color: #e9ecef;">Add Project</button>
           </div>
         </aside>
-        <!-- PROJECT LIST -->
-        <section class="col-8 my-4 d-flex flex-column">
-          <div class="d-flex flex-row section-header">
-            <p class="p-2 flex-fill">Project Name</p>
-            <p class="p-2 flex-fill">Project Type</p>
-            <p class="p-2 flex-fill">Hourly Rate ($)</p>
-            <p class="p-2 flex-fill">Due Date</p>
-            <p class="p-2 flex-fill">Days Until Due Date</p>
-            <p class="p-2 flex-fill">Potential Total Earnings ($)</p>
-            <p class="ps-5"></p>
-          </div>
-          <div class="d-flex flex-row section-header">
-            <p class="p-2 flex-fill">Project Name</p>
-            <p class="p-2 flex-fill">Project Type</p>
-            <p class="p-2 flex-fill">Hourly Rate ($)</p>
-            <p class="p-2 flex-fill">Due Date</p>
-            <p class="p-2 flex-fill">Days Until Due Date</p>
-            <p class="p-2 flex-fill">Potential Total Earnings ($)</p>
-            <p class="ps-5"></p>
-          </div>
-        </section>
+        <!-- PROJECT TABLE HEADER -->
+        <table class="table table-bordered table-sm m-4" style="background-color: #BF6415; height: fit-content;">
+          <thread>
+            <tr style="color:#e9ecef">
+              <th scope="col">Project Name</th>
+              <th scope="col">Project Type</th>
+              <th scope="col">Hourly Rate ($)</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Days Until Due Date</th>
+              <th scope="col">Potential Total Earnings ($)</th>
+              <th scope="col"></th>
+            </tr>
+          </thread>
+          <!-- PROJECT TABLE USER CONTENT -->
+          <tbody class="table-light">
+            <tr class="user-input">
+              <td scope="row">Project Name</td>
+              <td>Project Type</td>
+              <td>Hourly Rate ($)</td>
+              <td>Due Date</td>
+              <td>Days Until Due Date</td>
+              <td>Potential Total Earnings ($)</td>
+              <td>x</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
     <script src="./assets/JS/script.js"></script>
