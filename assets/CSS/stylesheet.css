@@ -12,12 +12,12 @@ h1 {
 }
 
 main {
-    background-color: var(--tan);
+    background-color: #e9ecef;
 }
 
 /*  CLASS SELECTORS */
 .custom-header {
-    height: 40vh;
+    height: 38vh;
     width: 100vh;
     background-color: var(--blue);
     color: var(--tan);
@@ -26,3 +26,8 @@ main {
 .box {
     border: solid red 2px;
 }
+
+.card-header {
+    letter-spacing: 2px;
+}
+
