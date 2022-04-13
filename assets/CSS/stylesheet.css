@@ -11,10 +11,18 @@ h1 {
     font-family: 'Nunito', sans-serif;
 }
 
+main {
+    background-color: var(--tan);
+}
+
 /*  CLASS SELECTORS */
 .custom-header {
     height: 40vh;
     width: 100vh;
     background-color: var(--blue);
     color: var(--tan);
+}
+
+.box {
+    border: solid red 2px;
 }
