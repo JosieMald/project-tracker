@@ -23,11 +23,16 @@ main {
     color: var(--tan);
 }
 
-.box {
-    border: solid red 2px;
-}
-
 .card-header {
     letter-spacing: 2px;
+}
+
+.section-header p {
+    list-style-type: none;
+    border: #e9ecef solid 1px;
+
+    background-color: #BF6415;
+    color: #e9ecef;
+    margin-bottom: 0;
 }
 
