@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Tracker</title>
+    <!-- jQuery Themes -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="./assets/CSS/reset.css" />
     <link rel="stylesheet" href="./assets/CSS/stylesheet.css" />
     <!-- Moment -->
@@ -60,7 +63,7 @@
             <li class="list-group-item">Hourly Rate</li>
           </ul>
           <div class="card-body" style="background-color: #024059">
-            <button class="btn col-12" style="background-color: #e9ecef">
+            <button id="add-project-btn" class="btn col-12" style="background-color: #e9ecef">
               Add Project
             </button>
           </div>
@@ -95,12 +98,35 @@
           </tbody>
         </table>
       </div>
+      <div id="dialog-form" title="Create new entry">
+        <p class="validateTips">All form fields are required.</p>
+        <form>
+          <fieldset>
+            <label for="project-name">Project Name</label>
+            <input type="text" name="project-name" id="project-name" value="" class="text ui-widget-content ui-corner-all">
+            <label for="project-type">Project Type</label>
+            <input type="text" name="project-type" id="project-type" value="" class="text ui-widget-content ui-corner-all">
+            <label for="hourly-rate">Hourly Rate</label>
+            <input type="text" name="hourly-rate" id="hourly-rate" value="" class="text ui-widget-content ui-corner-all">
+            <label for="due-date">Due Date</label>
+            <input type="text" name="due-date" id="due-date" value="" class="text ui-widget-content ui-corner-all">
+            <label for="days-left">Days Left</label>
+            <input type="text" name="days-left" id="days-left" value="" class="text ui-widget-content ui-corner-all">
+            <label for="total-earnings">Total Earnings</label>
+            <input type="text" name="total-earnings" id="total-earnings" value="" class="text ui-widget-content ui-corner-all">
+       
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+          </fieldset>
+        </form>
+      </div>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="./assets/JS/script.js"></script>
   </body>
 </html>
