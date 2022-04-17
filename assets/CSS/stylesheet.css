@@ -16,13 +16,18 @@ main {
 }
 
 td button {
-    background-color: #cf2e2e;
-    color: #e9ecef;
+    color: #454545;
+    height: 16px;
+    width: 16px;
+    line-height: 11px;
     font-weight: bolder;
     position: relative;
-    left: 15%;
+    margin-top: 12%;
+    left: 25%;
     border-radius: 2px;
-    border: #cf2e2e solid 2px;
+    border: 1px solid #c5c5c5;
+    display: flex;
+    justify-content: center;
 }
 
 /*  CLASS SELECTORS */
