@@ -15,6 +15,16 @@ main {
     background-color: #e9ecef;
 }
 
+td button {
+    background-color: #cf2e2e;
+    color: #e9ecef;
+    font-weight: bolder;
+    position: relative;
+    left: 15%;
+    border-radius: 2px;
+    border: #cf2e2e solid 2px;
+}
+
 /*  CLASS SELECTORS */
 .custom-header {
     height: 38vh;
@@ -27,4 +37,17 @@ main {
     letter-spacing: 2px;
 }
 
+.ui-widget-header {
+    background-color: #024059;
+    color: #e9ecef;
+    font-weight: bolder;
+}
+
+.table>:not(:first-child) {
+    border-top: none !important;
+}
+
+.empty-space {
+    padding: 15px !important;
+}
 

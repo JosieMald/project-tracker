@@ -107,6 +107,7 @@ $( function() {
         "<td>" + dueDate.val() + "</td>" +
         "<td>" + daysLeft.val() + "</td>" +
         "<td>" + totalEarnings.val() + "</td>" +
+        "<td>" + "<button>" + "x" + "</button>" + "</td>" +
       "</tr>" );
       dialog.dialog( "close" );
     }
