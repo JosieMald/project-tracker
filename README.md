@@ -8,13 +8,13 @@ This mini-project is divided into four tasks. The first three tasks will get you
 
 ### Task 1: HTML Build
 
-1. Create a header/hero area that welcomes users to the application and displays the current time and date using Moment.js with `setInterval()`.
+<!-- 1. Create a header/hero area that welcomes users to the application and displays the current time and date using Moment.js with `setInterval()`. -->
 
-2. Create a Bootstrap card component explaining the instructions of how to use the app and a button to open a [Bootstrap modal dialog](https://getbootstrap.com/docs/4.5/components/modal/).
+<!-- 2. Create a Bootstrap card component explaining the instructions of how to use the app and a button to open a [Bootstrap modal dialog](https://getbootstrap.com/docs/4.5/components/modal/). -->
 
 3. The modal should contain a form asking users to fill in the following data:
 
-    * The name of the project
+    <!-- * The name of the project -->
 
     * The type of project (use a `<select>` drop-down)
 

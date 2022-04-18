@@ -1,59 +1,68 @@
 * {
-    font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 :root {
-    --blue: #024059;
-    --tan: #D9CCC1;
+  --blue: #024059;
+  --tan: #d9ccc1;
 }
 
 h1 {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
 td button {
-    color: #454545;
-    height: 16px;
-    width: 16px;
-    line-height: 11px;
-    font-weight: bolder;
-    position: relative;
-    margin-top: 12%;
-    left: 25%;
-    border-radius: 2px;
-    border: 1px solid #c5c5c5;
-    display: flex;
-    justify-content: center;
+  color: #454545;
+  height: 16px;
+  width: 16px;
+  line-height: 11px;
+  font-weight: bolder;
+  position: relative;
+  margin-top: 12%;
+  left: 25%;
+  border-radius: 2px;
+  border: 1px solid #c5c5c5;
+  display: flex;
+  justify-content: center;
 }
 
 /*  CLASS SELECTORS */
 .custom-header {
-    height: 38vh;
-    width: 100vh;
-    background-color: var(--blue);
-    color: var(--tan);
+  height: 38vh;
+  width: 100vh;
+  background-color: var(--blue);
+  color: var(--tan);
 }
 
 .card-header {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .ui-widget-header {
-    background-color: #024059;
-    color: #e9ecef;
-    font-weight: bolder;
+  background-color: #024059;
+  color: #e9ecef;
+  font-weight: bolder;
 }
 
-.table>:not(:first-child) {
-    border-top: none !important;
+.table > :not(:first-child) {
+  border-top: none !important;
 }
 
 .empty-space {
-    padding: 15px !important;
+  padding: 15px !important;
 }
 
+#project-type {
+  width: 54% !important;
+  padding: 2%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
 
+.ui-dialog {
+    width: 25% !important;
+}
