@@ -35,6 +35,8 @@ $( function() {
     tips = $( ".validateTips" );
     console.log([]);
     console.log(projectName);
+
+    $( "#due-date" ).datepicker();
     
     var dialog = $( "#dialog-form" ).dialog({
         autoOpen: false,
