@@ -56,7 +56,7 @@ $( function() {
 
     //   USER ENTRY INPUT --------------------------------------------------------------
     function addEntry() {
-        
+        $('#tips').removeClass("validateTips");
         
         if (projectName.val() != "" && rate.val() != "" && dueDate.val() != "" && projectType.val() != null) {
             var number = moment(dueDate.val(), "l").format("DDD");
@@ -78,6 +78,8 @@ $( function() {
                   console.log(this);
                 })
 
+    } else {
+        $('#tips').addClass("validateTips");
     }
     return;
 }
