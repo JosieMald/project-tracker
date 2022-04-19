@@ -4,17 +4,10 @@ var daysLeft = $('#days-left');
 var totalEarnings = $('#total-earnings');
 
 // VARIABLES
-
-
-
-
-
-
-
-
-
+var emptyRow = "<tr><td colspan=12 class='text-center'> No Current Entries </td></tr>";
 
 $( function() {
+    $('#user-input').append(emptyRow);
     setInterval(function(){
         var currentDate = moment().format('MMM Do YYYY, h:mm:ss a');
         $('#date-time').text(currentDate);
@@ -59,6 +52,9 @@ $( function() {
         $('#tips').removeClass("validateTips");
         
         if (projectName.val() != "" && rate.val() != "" && dueDate.val() != "" && projectType.val() != null) {
+            if ($('#user-input').children().children().length == 1) {
+                $('#user-input').html("");
+            }
             var number = moment(dueDate.val(), "l").format("DDD");
             var today = moment().format("DDD");
             var daysRemaining = parseInt(number) - parseInt(today);
@@ -75,7 +71,9 @@ $( function() {
               dialog.dialog( "close" );
               $('.delete-btn').click(function(){
                   $(this).parent().parent().remove();
-                  console.log(this);
+                  if ($('#user-input').children().children().length == 0) {
+                    $('#user-input').append(emptyRow);
+                }
                 })
 
     } else {
