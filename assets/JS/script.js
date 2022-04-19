@@ -50,27 +50,34 @@ $( function() {
           form[ 0 ].reset();
         }
       });
+      
+    //   daysLeft = moment(dueDate).add(number, 'months').calendar(); 
+    //   console.log(daysLeft);
 
-//   USER ENTRY INPUT --------------------------------------------------------------
-  function addEntry() {
-    totalEarnings = parseInt(rate.val()) * 8;
-    console.log(totalEarnings);
+    //   USER ENTRY INPUT --------------------------------------------------------------
+    function addEntry() {
+        
+        
+        if (projectName.val() != "" && rate.val() != "" && dueDate.val() != "" && projectType.val() != null) {
+            var number = moment(dueDate.val(), "l").format("DDD");
+            var today = moment().format("DDD");
+            var daysRemaining = parseInt(number) - parseInt(today);
+            totalEarnings = (parseInt(rate.val()) * 8) * parseInt(daysRemaining);
+            $( "#user-input" ).append( "<tr>" +
+            "<td>" + projectName.val() + "</td>" +
+            "<td>" + projectType.val() + "</td>" +
+            "<td>" + rate.val() + "</td>" +
+            "<td>" + dueDate.val() + "</td>" +
+            "<td>" + "in " + daysRemaining + " days" + "</td>" +
+            "<td>" + "$ " + totalEarnings + "</td>" +
+            "<td>" + "<button class='delete-btn'>" + "x" + "</button>" + "</td>" +
+            "</tr>" );
+              dialog.dialog( "close" );
+              $('.delete-btn').click(function(){
+                  $(this).parent().parent().remove();
+                  console.log(this);
+                })
 
-    if (projectName.val() != "" && rate.val() != "" && dueDate.val() != "" && projectType.val() != null) {
-        $( "#user-input" ).append( "<tr>" +
-        "<td>" + projectName.val() + "</td>" +
-        "<td>" + projectType.val() + "</td>" +
-        "<td>" + rate.val() + "</td>" +
-        "<td>" + dueDate.val() + "</td>" +
-        "<td>" + daysLeft + "</td>" +
-        "<td>" + totalEarnings + "</td>" +
-        "<td>" + "<button class='delete-btn'>" + "x" + "</button>" + "</td>" +
-        "</tr>" );
-        dialog.dialog( "close" );
-        $('.delete-btn').click(function(){
-            $(this).parent().parent().remove();
-            console.log(this);
-        })
     }
     return;
 }
