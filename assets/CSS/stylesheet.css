@@ -1,3 +1,4 @@
+/* UNIVERSAL SELECTORS */
 * {
   font-family: "Source Serif Pro", serif;
 }
@@ -7,6 +8,7 @@
   --tan: #d9ccc1;
 }
 
+/* ELEMENT SELECTORS */
 h1 {
   font-family: "Nunito", sans-serif;
 }
@@ -56,18 +58,19 @@ td button {
   padding: 15px !important;
 }
 
+.ui-dialog {
+  width: 25% !important;
+}
+
+.validateTips {
+  color: red;
+  font-weight: bolder;
+}
+
+/* ID SELECTORS */
 #project-type {
   width: 54% !important;
   padding: 2%;
   border: 1px solid #dddddd;
   border-radius: 3px;
-}
-
-.ui-dialog {
-    width: 25% !important;
-}
-
-.validateTips {
-    color: red;
-    font-weight: bolder;
 }
