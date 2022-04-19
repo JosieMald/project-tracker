@@ -91,7 +91,7 @@ $(function () {
           "</tr>"
       );
       dialog.dialog("close");
-    //   DELETE ENTRY ROWS BTN --------------------------------------------------------------
+      //   DELETE ENTRY ROWS BTN --------------------------------------------------------------
       $(".delete-btn").click(function () {
         $(this).parent().parent().remove();
         if ($("#user-input").children().children().length == 0) {
