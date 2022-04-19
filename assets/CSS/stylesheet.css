@@ -67,6 +67,10 @@ td button {
   font-weight: bolder;
 }
 
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    background-color: #e9ecef;
+}
+
 /* ID SELECTORS */
 #project-type {
   width: 54% !important;

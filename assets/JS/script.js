@@ -44,9 +44,9 @@ $(function () {
   });
 
   //   USER ENTRY INPUT --------------------------------------------------------------
+  $("#due-date").datepicker();
   function addEntry() {
     $("#tips").removeClass("validateTips");
-    $("#due-date").datepicker();
     if (
       projectName.val() != "" &&
       rate.val() != "" &&
